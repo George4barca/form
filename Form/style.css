@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'xxx';
+    src: url(/Fonts/Convergence.ttf);
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, #9900a4 0%, #ff0080 100%);
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+    font-family: xxx;
+}
+
+form {
+    border-radius: 4px;
+    height: 400px;
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5  );
+}
+
+h3 {
+    margin: 15px 0 20px 0;
+    position: relative;
+}
+
+h3::before {
+    content: '';
+    position: absolute;
+    border: 1.2px solid red;
+    width: 18px;
+    background: linear-gradient(to right, #9900a4 0%, #ff0080 100%);
+    bottom: -2px;
+}
+
+.info,
+.info input {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.info input {
+    margin-bottom: 20px;
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: rgb(32, 32, 32);
+}
+
+.info input::placeholder {
+    font-family: xxx;
+}
+
+.info input:focus {
+    border-bottom: 2px solid #ff0080;
+}
+
+button.btn {
+    background: linear-gradient(to right, #9900a4 0%, #ff0080 100%);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+button.btn:hover {
+    background: linear-gradient(to right, #ff0080 0%, #9900a4 100%);
+}
+
+button.btn:active {
+    background: linear-gradient(to right, #9900a4 0%, #ff0080 100%);
+}
+
+button~p {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.media {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+.info~.twitter {
+    background: linear-gradient(to left, #00acee 0%, #1abeff 100%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.info~.facebook {
+    background: linear-gradient(to left, #3b5998 0%, #476bb8 100%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.fa-brands {
+    margin-right: 10px;
+}
